@@ -25,8 +25,3 @@ gulp dev
 
 Сервер должен быть на 127.0.0.1:3000
 
-
-Макет
-=====
-
-https://www.figma.com/file/IBH3IYmwkspIWuERxjDcGj/Garne
