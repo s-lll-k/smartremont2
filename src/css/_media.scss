@@ -1,5 +1,89 @@
+@media (max-width: 1024px){
+    .services{
+        &__box{
+            padding: 0;
+            background-image: none;
+        }
+        &__items{
+            display: none;
+        }
+        &__title{
+            margin-bottom: 4px;
+        }
+        &__text{
+            margin-bottom: 0;
+        }
+        &__slider{
+            display: block;
+        }
+        &__top{
+            padding: 24px 12px 22px;
+            padding-right: 117px;
+            border-bottom: 1px solid #F7F7F7;
+            background-image: url(../images/services.jpg);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &__item{
+            & + &{
+                margin-left: 0;
+            }
+        }
+    }
+}  
 @media (max-width: 800px){  
+    .services{
+        margin-bottom: 24px;
+        &__title{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__text{
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &__item{
+            &-title{
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &-text{
+                margin-top: 4px;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+
     .onboarding{
+        &__title{
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__space-room{
+            display: block;
+            .title18{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        &__edit{
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__item,
+        &__item2{
+            &-title{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
         &__row{
             &.onboarding__row_room-num{
                 flex-direction: column;
@@ -192,7 +276,7 @@
         &-add{
             position: absolute;
             right: 16px;
-            top: 22px;
+            top: 19px;
             margin-top: 0;
         }
         &__item{
