@@ -163,6 +163,9 @@
 }
 
 @media (max-width: 640px){
+    .wrapper{
+        padding-bottom: 122px;
+    }
     .onboarding{
         &__row{
             flex-direction: column;
