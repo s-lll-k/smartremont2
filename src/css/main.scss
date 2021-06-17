@@ -708,6 +708,7 @@ footer {
     }
     &__items{
         max-width: 869px;
+        display: flex;
         &-wrapper{
             display: flex;
         }
