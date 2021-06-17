@@ -1,3 +1,69 @@
+@media(max-width:1270px) {
+    .header {
+        &__nav {
+            margin-left: 20px;
+
+            li+li {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width:1170px) {
+    .header {
+        &__nav {
+            li {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media(max-width:1116px) {
+    .bahandi {
+        display: none;
+    }
+
+    .header {
+        &__inner {
+            height: 107px;
+        }
+
+        &__logo {
+            margin-right: auto;
+
+            img {
+
+                width: 126px;
+                height: 43px;
+            }
+        }
+
+        &__nav {
+            display: none;
+        }
+    }
+
+    .footer {
+        &__logo {
+            img {
+                width: 132px;
+                height: 45px;
+            }
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__socials {
+            margin-left: auto;
+            margin-right: 40px;
+        }
+    }
+}
+
 @media (max-width: 1024px){
     .services{
         &__box{
@@ -32,6 +98,7 @@
         }
     }
 }  
+
 @media (max-width: 800px){  
     .services{
         margin-bottom: 24px;
@@ -116,6 +183,62 @@
         }
     }
 }
+
+@media(max-width:537px) {
+    .footer {
+        &__copyright {
+            margin-top: 24px;
+            flex-direction: column;
+            align-items: flex-start;
+
+            span {
+                margin-top: 8px;
+            }
+        }
+
+        &__socials {
+            margin: 0 auto;
+        }
+
+        &__logo {
+            img {
+                width: 113px;
+                height: 38px;
+            }
+        }
+
+        &__btn {
+            span {
+                display: none;
+            }
+
+            svg {
+                margin-right: 0;
+            }
+
+            width: 40px;
+            height: 40px;
+
+        }
+
+    }
+
+    .header__inner {
+
+        height: 88px;
+
+    }
+
+    .header__tel {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .bahandi {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 480px){
     .back{
         display: block;
@@ -322,5 +445,42 @@
             max-width: 100%;
             width: 100%;
         }
+    }
+}
+
+@media(max-width:425px) {
+    .bahandi {
+        display: block;
+    }
+
+    .header__logo {
+        margin: 0 auto;
+
+        img {
+            width: 105px;
+            height: 36px;
+        }
+    }
+
+    .header__btn {
+        span {
+            display: none;
+        }
+
+        svg {
+            margin-right: 0;
+        }
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .header__logo {
+        margin: 0 auto;
+    }
+
+    .header__tel {
+        display: none;
     }
 }
