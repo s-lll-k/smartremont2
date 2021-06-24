@@ -103,6 +103,14 @@
 
 @media (max-width: 1024px){
     .constructor{
+        .packs{
+            &__content{
+                padding-top: 0;
+            }
+        }
+        .inform{
+            margin-bottom: 16px;
+        }
         .description-slider{
             display: block;
         }
@@ -204,6 +212,9 @@
 
         .total{
             display: none;
+        }
+        .total-mob{
+            display: block;
         }
     }
 }  
@@ -665,6 +676,47 @@
                         font-size: 10px;
                         line-height: 14px;
                     }
+                }
+            }
+        }
+
+        .packs{
+            &__item{
+                width: 212px;
+                min-width: 212px;
+                &-logo{
+                    margin-bottom: 8px;
+                    img{
+                        height: 16px;
+                    }
+                }
+                &-type{
+                    span{
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+                &-discount{
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 0 8px;
+                    height: 28px;
+                }
+                &-price{
+                    &-new{
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                    &-old{
+                        font-size: 12px;
+                        line-height: 22px;
+                    }
+                }
+            }
+            &__products{
+                &-title{
+                    font-size: 12px;
+                    line-height: 16px;
                 }
             }
         }
