@@ -563,7 +563,7 @@
         .package{
             min-width: 184px;
             width: 184px;
-            & + &{
+            & + .package{
                 margin-left: 24px;
             }
             &__image{
@@ -603,7 +603,7 @@
             &-item{
                 width: 165px;
                 min-width: 165px;
-                & + &{
+                & + .plans-item{
                     margin-left: 16px;
                 }
                 &__desc{
