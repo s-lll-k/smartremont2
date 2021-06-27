@@ -39,8 +39,27 @@ document.addEventListener("DOMContentLoaded", function() {
       type: 'bullets',
     }
   });
+
+  let constructorSlider = new Swiper('.finishing__slider', {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.finishing__slider-arrow._next',
+      prevEl: '.finishing__slider-arrow._prev',
+    },
+  });
+
   
   function changeDOM(){
+    if (window.innerWidth <= 1200) {
+      if (document.querySelector('.finishing__box')) {
+        document.querySelector('.finishing__box').appendChild(document.querySelector('.finishing__furniture'));
+        document.querySelector('.finishing__selects').appendChild(document.querySelector('.finishing__select._package'));
+        document.querySelector('.finishing__selects').appendChild(document.querySelector('.finishing__select._room'));
+      }
+      if (document.querySelector('.finishing-mob')) {
+        document.querySelector('.finishing-mob__inner').appendChild(document.querySelector('.finishing__form'));
+      }
+    }
     if (window.innerWidth <= 1024) {
       servicesSlider = new Swiper('.services__slider', {
           slidesPerView: 1,

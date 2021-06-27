@@ -41,7 +41,78 @@
         }
     }
 }
+@media(max-width: 1200px) {
+    .constructor{
+        &._constructor-page{
+            .wrapper-with-aside{
+                flex-direction: column;
+            }
 
+            .aside-constructor{
+                margin-right: 0;
+                width: 100%;
+                min-width: unset;
+                padding: 0;
+                background-color: unset;
+                padding: 16px 0 0;
+                border-radius: unset;
+                border-bottom: none !important;
+                margin-bottom: 0 !important;
+                &__header{
+                    display: none;
+                }
+                &__items{
+                    margin-bottom: 0;
+                }
+                &__item + .aside-constructor__item{
+                    margin-left: 14px;
+                }
+                &__content{
+                    display: none;
+                }
+            }
+
+            .total{
+                display: none;
+            }
+            .total-mob{
+                display: block;
+            }
+        }
+        .finishing{
+            &-mob{
+                display: block;
+            }
+            &__selects{
+                display: flex;
+            }
+            &__furniture{
+                position: static;
+                max-width: 100%;
+                padding: 16px 0;
+            }
+            &__select{
+                position: static;
+                background-color: #F7F7F7;
+                & + .finishing__select{
+                    margin-left: 20px;
+                }
+            }
+            &__item{
+                max-width: 625px;
+                width: 100%;
+                &-price{
+                    margin-left: auto;
+                }
+            }
+            &__form{
+                padding: 16px 0 24px;
+                box-shadow: unset;
+                background-color: unset;
+            }
+        }
+    }
+}
 @media(max-width:1170px) {
     .header {
         &__nav {
@@ -369,6 +440,94 @@
 
 @media (max-width: 768px){
     .constructor{
+        .constructor-item{
+            &._living-room1{
+                .constructor-item__dot{
+                    &._door{
+                        left: 24px;
+                        bottom: 24px;
+                    }
+                }
+            }
+            &__dot{
+                &-name{
+                    padding: 4px 12px;
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+                &-icon{
+                    width: 16px;
+                    height: 16px;
+                    span{
+                        width: 9px;
+                        height: 9px;
+                    }
+                    svg{
+                        width: 6px;
+                        height: 6px;
+                    }
+                }
+            }
+        }
+        .finishing{
+            &__slider{
+                margin-left: -40px;
+                margin-right: -40px;
+                border-radius: 0;
+            }
+            &__view{
+                display: none;
+            }
+            &__hint{
+                display: flex;
+            }
+            &__select{
+                padding: 4px 8px;
+                padding-right: 50px;
+                &-arrow{
+                    width: 20px;
+                    right: 8px;
+                }
+                &-title{
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                &-meter{
+                    margin-top: 2px;
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+                .packs__cost{
+                    &-icon{
+                        line-height: 10px;
+                    }
+                    svg{
+                        width: 5px;
+                        height: 10px;
+                    }
+                }
+            }
+            &__item{
+                &-title{
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                &-text{
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+                &-price{
+                    &-new{
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                    &-meter{
+                        font-size: 10px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
         .pagination-pc{
             display: block;
         }
@@ -479,6 +638,54 @@
         padding: 0 16px;
     }
     .constructor{
+        .constructor-item{
+            &._living-room1{
+                .constructor-item__dot{
+                    &._top{
+                        top: 16px;
+                    }
+                    &._floor{
+                        bottom: 16px;
+                    }
+                    &._wall{
+                        left: 16px;
+                    }
+                    &._door{
+                        left: 16px;
+                        bottom: 16px;
+                    }
+                }
+            }
+            &._living-room2{
+                .constructor-item__dot{
+                    &._top{
+                        top: 24px;
+                    }
+                    &._floor{
+                        bottom: 16px;
+                    }
+                    &._wall{
+                        right: 16px;
+                    }
+                    &._door{
+                        left: 16px;
+                    }
+                }
+            }
+        }
+        .finishing{
+            &__furniture{
+                width: 100%;
+                justify-content: space-between;
+            }
+            &__selects{
+                justify-content: space-between;
+            }
+            &__slider{
+                margin-left: -16px;
+                margin-right: -16px;
+            }
+        }
         .back{
             display: block;
         }
@@ -856,6 +1063,17 @@
 }
 @media(max-width: 380px) {
     .constructor{
+        .finishing{
+            &__selects{
+                flex-direction: column;
+            }
+            &__select{
+                & + .finishing__select{
+                    margin-top: 16px;
+                    margin-left: 0;
+                }
+            }
+        }
         .filling{
             &-item{
                 &__price{
