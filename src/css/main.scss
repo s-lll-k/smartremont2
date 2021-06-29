@@ -521,7 +521,14 @@ footer {
 
 
 
-
+    .header-back-to{
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        left: 0;
+        top: 0;
+        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.06);
+    }
 
     .onboarding{
         &__title{
