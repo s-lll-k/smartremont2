@@ -813,6 +813,11 @@
                 & + .plans-item{
                     margin-left: 16px;
                 }
+                &__image{
+                    img{
+                        height: 106px;
+                    }
+                }
                 &__desc{
                     &-title{
                         font-size: 10px;
