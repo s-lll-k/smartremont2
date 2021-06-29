@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--#include virtual="/templates/_head.html" -->
+
+<body>
+    <div class="block"></div>
+    <div class="wrapper">
+        <div class="content">
+            <!--#include virtual="/templates/_header.html" -->
+            <div class="constructor">
+                <div class="residential-modal popup2">
+                    <div class="popup2__top">
+                        <div class="popup2__title">
+                            Вызов замерщика
+                        </div>
+                        <div class="popup2__close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#595959"/>
+                            </svg>                
+                        </div>
+                    </div>
+                    <div class="popup2__inner">
+                        <form class="residential-modal__form">
+                            <div class="input-box">
+                                <div class="input-box__name">
+                                    Имя
+                                </div>
+                                <input type="text" placeholder="Введите свое имя здесь">
+                            </div>
+                            <div class="input-box _tel">
+                                <div class="input-box__name">
+                                    Телефон
+                                </div>
+                                <input type="tel" placeholder="+7 (---) --- -- --">
+                            </div>
+                            <div class="input-box">
+                                <div class="input-box__name">
+                                    Почта
+                                </div>
+                                <input type="email" placeholder="Введите свой e-mail">
+                            </div>
+                            <button class="popup2__btn _send button button1">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="/templates/_scripts.html" -->
+</body>
+
+</html>

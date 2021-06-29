@@ -184,6 +184,83 @@
 
 @media (max-width: 1024px){
     .constructor{
+        .popup2{
+            border-radius: 12px 12px 0 0;
+            max-width: 100%;
+            &._done{
+                .popup2__top{
+                    padding: 24px 16px;
+                    border-bottom: 1px solid #E8E8E8;
+                }
+            }
+            &__close{
+                display: none;
+            }
+            &__top{
+                background-color: #FFFFFF;
+                padding: 24px 16px 0;
+                border-bottom: none;
+            }
+            &__inner{
+                padding: 16px;
+            }
+            &__btn{
+                max-width: 100%;
+                width: 100%;
+                &._send{
+                    margin-top: 40px;
+                }
+                &.button{
+                    height: 44px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                &._done{
+                    margin-top: 32px;
+                }
+            }
+        }
+        .residential-modal{
+            .input-box-row{
+                flex-direction: column;
+                .input-box + .input-box{
+                    margin-left: 0;
+                }
+            }
+            .input-box{
+                max-width: 100%;
+                margin-top: 16px;
+                &._tel{
+                    max-width: 100%;
+                }
+            }
+            &__text{
+                display: none;
+            }
+            &__done{
+                padding: 0;
+                &-text{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+        .onboarding-backdrop{
+            &__list{
+                li{
+                    padding: 24px 16px;
+                }
+            }
+            .popup2{
+                &__top{
+                    padding-top: 16px;
+                }
+                &__btn{
+                    max-width: calc(100% - 32px);
+                    margin: 24px 16px 0;
+                }
+            }
+        }
         .packs{
             &__content{
                 padding-top: 0;
@@ -767,10 +844,10 @@
                 }
             }
         }
-        .package{
+        .package2{
             min-width: 184px;
             width: 184px;
-            & + .package{
+            & + .package2{
                 margin-left: 24px;
             }
             &__image{
@@ -866,7 +943,7 @@
             }
         }
     
-        .didnt-find{
+        .didnt-find2{
             padding: 8px;
             &__btn{
                 width: 156px;

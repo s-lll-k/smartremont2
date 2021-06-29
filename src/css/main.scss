@@ -1,3 +1,5 @@
+@import 'old_main';
+
 html {
     box-sizing: border-box;
 }
@@ -424,7 +426,7 @@ footer {
         }
     }
 
-    .fake-check {
+    .fake-check2 {
         display: block;
         cursor: pointer;
         max-width: max-content;
@@ -434,11 +436,11 @@ footer {
             display: none;
     
             &:checked {
-                & + .fake-check__btn {
+                & + .fake-check2__btn {
                     color: #1374CF;
                     border-color: #1374CF;
                 }
-                & + .fake-check__circle{
+                & + .fake-check2__circle{
                     border-color: #1374CF;
                     &::after{
                         opacity: 1;
@@ -482,9 +484,8 @@ footer {
                 transition: opacity .3s ease;
             }
         }
-    
         &.fake-check_rounded{
-            .fake-check__btn{
+            .fake-check2__btn{
                 padding: 0 10px;
                 border-radius: 100px;
                 height: 37px;
@@ -592,10 +593,10 @@ footer {
             flex-wrap: wrap;
             margin-left: -16px;
             margin-top: -16px;
-            .fake-check{
+            .fake-check2{
                 margin-left: 16px;
                 margin-top: 16px;
-                input:checked + .fake-check__btn{
+                input:checked + .fake-check2__btn{
                     font-weight: 700;
                 }
                 &__btn{
@@ -605,7 +606,7 @@ footer {
             }
             &.onboarding__checkboxes_package{
                 margin-bottom: 16px;
-                .fake-check__btn{
+                .fake-check2__btn{
                     padding: 0 23px;
                     color: #AAAAAA;
                 }
@@ -675,7 +676,7 @@ footer {
         display: flex;
         overflow-x: auto;
     }
-    .package{
+    .package2{
         display: block;
         width: 290px;
         min-width: 290px;
@@ -683,7 +684,7 @@ footer {
         box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.06);
         border-radius: 4px;
         overflow: hidden;
-        & + .package{
+        & + .package2{
             margin-left: 40px;
         }
         &__image{
@@ -760,7 +761,7 @@ footer {
         }
     }
     
-    .didnt-find{
+    .didnt-find2{
         margin: 24px 0;
         max-width: 432px;
         width: 100%;
@@ -2258,7 +2259,7 @@ footer {
             & + .finishing__item{
                 margin-top: 16px;
             }
-            .fake-check__wrapper{
+            .fake-check2__wrapper{
                 padding-top: 2px;
             }
             &-content{
@@ -2295,6 +2296,145 @@ footer {
             &-box{
                 margin-left: 8px;
                 margin-right: 8px;
+            }
+        }
+    }
+
+    .input-box{
+        width: 100%;
+        &-row{
+            display: flex;
+            .input-box + .input-box{
+                margin-left: 24px;
+            }
+        }
+        &__name{
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            color: #595959;
+            margin-bottom: 4px;
+        }
+        input{
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            color: #595959;
+            padding: 0 16px;
+            height: 56px;
+            border: 1px solid #E8E8E8;
+            border-radius: 4px;
+            width: 100%;
+            min-width: 0;
+        }
+    }
+    .popup2{
+        max-width: 569px;
+        width: 100%;
+        background-color: #FFFFFF;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        &__top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F7F7F7;
+            border-bottom: 1px solid #E8E8E8;
+            padding: 24px;
+        }
+        &__title{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #595959;
+        }
+        &__close{
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            svg{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__inner{
+            padding: 16px 24px 24px;
+        }
+        &__btn{
+            height: 48px;
+            &.button{
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 0px 24px;
+            }
+            &._send{
+                margin-top: 24px;
+                margin-left: auto;
+            }
+            &._done{
+                margin: 83px auto 0;
+            }
+        }
+    }
+    .residential-modal{
+        &__text{
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 16px;
+        }
+        &__form{
+            & > .input-box:first-of-type{
+                margin-top: 0;
+            }
+            .input-box{
+                max-width: 399px;
+                margin-top: 24px;
+                &._tel{
+                    max-width: 223px;
+                }
+            }
+        }
+        &__done{
+            padding-top: 67px;
+            &-icon{
+                width: 56px;
+                margin: 0 auto 16px;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            &-text{
+                max-width: 345px;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                color: #595959;
+                margin: 0 auto;
+            }
+        }
+    }
+    .onboarding-backdrop{
+        .popup2{
+            &__inner{
+                padding-right: 0;
+                padding-left: 0;
+            }
+            &__btn{
+                margin-right: 24px;
+            }
+        }
+        &__list{
+            li{
+                cursor: pointer;
+                padding: 24px;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                border-bottom: 1px solid #E8E8E8;
             }
         }
     }
