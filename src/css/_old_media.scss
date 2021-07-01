@@ -1,0 +1,2065 @@
+@media (max-width: 1250px){
+    .report-item{
+        display: block;
+        &__col{
+            min-width: unset;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        &__name{
+            margin-bottom: 0;
+        }
+        &__status{
+            margin-left: auto;
+            margin-right: 10px;
+        }
+        &__inner{
+            max-width: 100%;
+        }
+    }
+    .orderstatus{
+        &__info{
+            display: block;
+            &-image{
+                max-width: 540px;
+            }
+            &-box{
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+    .showroom{
+        .card1._horizontal{
+            .card1__image{
+                height: 250px;
+            }
+        }
+    }
+    .request{
+        padding-right: 415px;
+        &._vert{
+            .request__image{
+                img{
+                    width: unset;
+                }
+            }
+        }
+        &__image{
+            img{
+                width: 400px;
+            }
+        }
+    }
+    .slider-box{
+        &__text{
+            max-width: 650px !important;
+        }
+    }
+    .why{
+        &__box{
+            flex-wrap: wrap;
+            margin-top: -32px;
+            margin-left: -32px;
+        }
+        &__item{
+            width: calc(50% - 32px);
+            margin-left: 32px;
+            margin-top: 32px;
+        }
+        &__item2{
+            padding: 0;
+        }
+    }   
+
+    .banners{
+        &__box{
+            display: block;
+            margin-top: 24px;
+        }
+        &__item{
+            max-width: 100% !important;
+            & + &{
+                margin-left: 0;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1120px){
+    .myremont-item{
+        &__image{
+            height: 185px;
+        }
+    }
+    .packages{
+        &__cards{
+            flex-wrap: wrap;
+            margin-top: 0;
+            .package{
+                width: calc(50% - 32px);
+                margin-top: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .b-title{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .myremont{
+        &__accordions-item{
+            padding: 16px;
+        }
+        &__inner{
+            display: block;
+        }
+        &__aside{
+            overflow-x: auto;
+            width: 100%;
+            min-width: unset;
+            padding: 0;
+            &-list{
+                width: max-content;
+                padding: 15px;
+                display: flex;
+                li + li{
+                    margin-left: 20px;
+                    margin-top: 0;
+                }
+                li{
+                    white-space: nowrap;
+                }
+            }
+        }
+        &__wrapper{
+            margin-left: 0;
+            margin-top: 32px;
+        }
+    }
+
+    .constructor{
+        &__nav{
+            flex-wrap: wrap;
+        }
+        &__links{
+            width: 100%;
+            margin: 24px 0 0;
+            order: 1;
+        }
+        &__images{
+            margin-right: 0;
+        }
+        &-box{
+            display: block;
+        }
+        &-aside{
+            width: 100%;
+            margin-top: 24px;
+        }
+    }
+
+    .chooseplan{
+        &__cards{
+            .chooseplan-card{
+                width: calc(50% - 32px);
+            }
+        }
+        &__roomcard-wrapper{
+            .chooseplan-room{
+                width: calc(50% - 32px);
+            }
+        }
+    }
+    .chooseapart{
+        &__title{
+            margin-bottom: 16px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__btns{
+            margin-top: 24px;
+            & > a{
+                height: unset;
+                line-height: unset;
+            }
+        }
+    }
+    .contacts{
+        &__inner{
+            display: block;
+        }
+    }
+    ._aside-feedback{
+        margin-top: 32px;
+        margin-left: 0;
+    }
+    .faq{
+        &__inner{
+            display: block;
+        }
+        &__item{
+            padding: 16px;
+        }
+    }
+    .title-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        & > a{
+            margin-top: 16px;
+        }
+    }
+    .filter-call{
+        display: block;
+    }
+    .showroom{
+        &__inner{
+            margin-top: 32px;
+        }
+        &-filter{
+            display: none;
+        }
+        .card1._horizontal{
+            .card1__image{
+                min-width: 280px;
+                height: 184px;
+            }
+            .card1__text{
+                font-size: 14px;
+                line-height: 21px;
+            }
+            .card1__row{
+                flex-wrap: wrap;
+                margin-top: -8px;
+                & > div{
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    .request{
+        background-color: $blue;
+        color: #FFF;
+        padding: 32px;
+        &._vert{
+            width: 100%;
+            padding: 32px;
+        }
+        &__image{
+            display: none;
+        }
+        &__text{
+            color: #FFF;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 440px;
+        }
+        &__form{
+            .input{
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background-color: transparent;
+                color: #FFF;
+                &::placeholder{
+                    color: #FFF;
+                }
+            }
+            .fake-check{
+                &__text{
+                    color: #FFF;
+                }
+            }
+            .button{
+                background-color: #FFF;
+                color: $blue;
+            }
+            &-text{
+                color: #FFF;
+            }
+        }
+    }
+    .card1{
+        &__title{
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    .slider-box{
+        .client-comment{
+            max-width: 400px;
+        }
+        &._blog{
+            .card1__image{
+                height: 250px;
+            }
+        }
+        &._our-work{
+            .card1__image{
+                height: 310px;
+            }
+        }
+        &._showroom{
+            .card1__image{
+                height: 500px;
+            }
+            .slider-box__slider{
+                margin-top: 32px;
+            }
+        }
+        .card1{
+            max-width: 400px;
+            .card1__category{
+                display: none;
+            }
+        }
+        &__btn{
+            margin-left: 0;
+        }
+        &__title{
+            margin-bottom: 0;
+        }
+        &__text{
+            display: none;
+        }
+        &__row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .sm-title{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .title{
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    
+    .banners{
+        &__slider{
+            .slider-arrow{
+                position: absolute;
+                right: 40px;
+                bottom: 40px;
+                button{
+                    background: rgba(19, 116, 207, 0.7);
+                    &._not-active{
+                        background: rgba(19, 116, 207, 0.5);
+                        opacity: 0.4;
+                    }
+                }
+            }
+            &-item{
+                .title{
+                    margin-bottom: 8px;
+                }
+                p{
+                    max-width: 385px;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+            &-box{
+                max-width: 476px;
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    .question{
+        &__box{
+            display: block;
+        }
+        &__col{
+            &-title{
+                margin-bottom: 0;
+            }
+            & + &{
+                margin-top: 14px;
+                margin-left: 0;
+            }
+        }
+        &__row{
+            display: block;
+        }
+        &__btn{
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 768px){
+    .report{
+        &__next{
+            &-title{
+                font-size: 21px;
+                line-height: 29px;
+                margin-bottom: 24px;
+            }
+            .next-item{
+                display: block;
+                & + .next-item{
+                    margin-top: 32px;
+                }
+                &__col{
+                    min-width: unset;
+                    width: 100%;
+                    margin-bottom: 8px;
+                }
+            }
+        }   
+    }
+    .orderstatus{
+        padding: 16px;
+        padding-bottom: 20px;
+    }
+    .remonttab{
+        &__header{
+            flex-direction: column;
+            li{
+                max-width: max-content;
+                & + li{
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .chat{
+        &__messages{
+            margin-right: -10px;
+        }
+        &-message{
+            padding-right: 50px;
+            &.chat-message_my{
+                padding-left: 50px;
+            }
+            &__wrapper{
+                padding: 15px;
+            }
+            &__text{
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &__images{
+                a{
+                    width: 110px;
+                    height: 72px;
+                }
+            }
+            &__file{
+                font-size: 14px;
+                line-height: 21px;
+                padding-left: 27px;
+                &::before{
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+        }
+    }
+    .orderstatus{
+        &__info{
+            &-box{
+                min-width: unset;
+            }
+        }
+    }
+    .question{
+        display: block;
+        &__image{
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &__box{
+            margin-bottom: 16px;
+        }
+    }
+    .myremont-item{
+        display: block;
+        &__image{
+            margin-right: 0;
+            margin-bottom: 20px;
+            max-width: 100%;
+            height: 250px;
+        }
+    }
+    .didnt-find{
+        padding: 20px 16px;
+        &__title{
+            font-size: 24px;
+            line-height: 26px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    .package{
+        &:hover{
+            transform: none;
+        }
+    }
+    .packages{
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__item{
+            &-row{
+                display: block;
+            }
+            &-link{
+                margin-top: 10px;
+            }
+        }
+        &__cards{
+            .package{
+                width: calc(100% - 32px);
+            }
+        }
+    }
+    .contacts{
+        &__contacts{
+            display: block;
+            &-item{
+                & + &{
+                    margin-left: 0;
+                    margin-top: 24px;
+                }
+            }
+        }
+        &__radio{
+            display: block;
+            &-item{
+                & + &{
+                    margin-left: 0;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+    .comments{
+        .client-comment{
+            max-width: calc(100% - 32px);
+            &__name{
+                position: static;
+                margin-bottom: 8px;
+            }
+            &__video{
+                bottom: -6px;
+                left: 83px;
+            }
+        }
+    }
+    .client-comment{
+        &__box{
+            padding: 24px;
+            padding-top: 81px;
+        }
+        &__quotes{
+            top: 16px;
+            right: 20px;
+        }
+    }
+    .slider-box{
+        &._comments,
+        &._blog,
+        &._our-work,
+        &._showroom{
+            margin: 80px 0;
+        }
+    }
+    .why{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__subtitle{
+            display: none;
+        }
+        &__box2{
+            display: none;
+        }
+        &__item{
+            &-num{
+                font-size: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+            &-text{
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width: 700px){
+    .chooseplan-room{
+        &__delete{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    .chooseplan{
+        &__roomcard-wrapper{
+            .chooseplan-room{
+                width: calc(100% - 32px);
+            }
+        }
+    }
+}
+@media (max-width: 600px){
+    .banners{
+        &__slider{
+            &-item{
+                background-color: #E9ECF4;
+            }
+            &-image{
+                display: none;
+            }
+        }
+    }
+
+    .b-title{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .orderstatus{
+        &__info-image{
+            height: 185px;
+        }
+    }
+    .myremont-item{
+        &__wrapper{
+            min-width: unset;
+        }
+        &__image{
+            height: 185px;
+        }
+        &__box{
+            display: block;
+            margin-top: 15px;
+        }
+        &__col{
+            & + &{
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+        &__desc{
+            & + &{
+                margin-top: 12px;
+            }
+            &-name{
+                margin-bottom: 4px;
+            }
+        }
+    }
+    .modal{
+        padding: 50px 25px;
+    }
+    .modal-close{
+        width: 15px;
+        height: 15px;
+    }
+    .submitapp{
+        &__row{
+            display: block;
+            input + input{
+                margin-left: 0;
+                margin-top: 24px;
+            } 
+        }
+        &__btn{
+            display: block;
+            & > .button{
+                margin-right: 0;
+                margin-bottom: 20px;
+                height: unset;
+            }
+        }
+    }
+    .login{
+        &__row{
+            display: block;
+            p{
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+    }
+    .chooseplan{
+        &__cards{
+            .chooseplan-card{
+                width: calc(100% - 32px);
+            }
+        }
+    }
+    .chooseplan-card{
+        &__image{
+            height: 180px;
+        }
+    }
+    .chooseapart{
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__btns{
+            display: block;
+            & > a{
+                margin: 0 auto;
+                & + a{
+                    margin: 0 auto;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+
+    .card1._horizontal{
+        display: block;
+        .card1{
+            &__image{
+                max-width: 100%;
+                margin-bottom: 16px;
+            }
+            &__wrapper{
+                max-width: 100%;
+            }
+        }
+    }
+    .slider-box{
+        &._showroom{
+            .slider-box__inner{
+                padding-bottom: 127px;
+            }
+            .slider-box__nav{
+                bottom: 63px;
+            }
+        }
+        &__inner{
+            position: relative;
+            padding-bottom: 64px;
+        }
+        &__nav{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            justify-content: space-between;
+        }
+        &__link{
+            order: 1;
+            margin-right: 0;
+        }
+        &__btn{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-top: 0;
+            display: table !important;
+        }
+    }
+}
+@media (max-width: 537px){
+    .report-item{
+        &__name{
+            margin-bottom: 8px;
+        }
+        &__col{
+            display: block;
+        }
+    }
+    .file-btn{
+        font-size: 14px;
+    }
+    .orderstatus{
+        &__steps-row{
+            display: block;
+            margin-bottom: 12px;
+        }
+        .steps__inner{
+            padding-bottom: 10px;
+            .steps__line {
+                margin: 18px 22px 0;
+            }
+        }
+    }
+    .chat{
+        &__form{
+            &-row{
+                flex-direction: column;
+            }
+            textarea{
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            &-btn{
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        &-message{
+            &__images{
+                a{
+                    width: calc(50% - 16px);
+                }
+            }
+            &__text{
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+    .chooseplan{
+        &__roomcard{
+            &-btns{
+                display: block;
+                .button{
+                    margin: 0 auto;
+                    & + .button{
+                        margin: 16px auto 0;
+                    }
+                }
+            }
+        }
+    }
+    .constructor{
+        &-accordion{
+            &__box{
+                margin-left: -12px;
+                margin-top: -12px;
+            }
+            &__item{
+                width: 64px;
+                height: 64px;
+                margin-left: 12px;
+                margin-top: 12px;
+                &._checked{
+                    &::before{
+                        width: 24px;
+                        height: 24px;
+                        background-size: 15px;
+                    }
+                }
+            }
+        }
+        &__select{
+            margin-bottom: 16px;
+        }
+        &__price{
+            padding-left: 0;
+            border-left: none;
+            width: 100%;
+        }
+        &__images{
+            &-nav{
+                a{
+                    width: 100px;
+                    height: 61px;
+                }
+            }
+        }
+    }
+    body{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .sm-title{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .title{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .request{
+        padding: 16px;
+        padding-bottom: 35px;
+        &__title{
+            line-height: 100%;
+            margin-bottom: 8px;
+        }
+        &__text{
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__form{
+            &-row{
+                display: block;
+            }
+            &-btn{
+                display: block;
+            }
+            &-text{
+                margin-top: 16px;
+            }
+            .input{
+                max-width: 100%;
+                & + .input{
+                    max-width: 100%;
+                    margin-left: 0;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+
+    .why{
+        margin-top: 64px;
+        &__box{
+            margin-top: -16px;
+        }
+        &__item{
+            width: calc(100% - 32px);
+            margin-top: 16px;
+            padding: 24px 19px;
+        }
+    }
+
+    .banners{
+        &__item{
+            background-color: #F4F4F4;
+            background-image: none !important;
+        }
+    }
+
+    .steps{
+        &__line{
+            margin: 18px 0px;
+        }
+        &__item{
+            &-name{
+                font-size: 14px;
+                line-height: 16px;
+            }
+            &-text{
+                font-size: 11px;
+                line-height: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .myremont{
+        &__accordions{
+            &-item{
+                .accordion-btn{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .chooseplan{
+        &__form{
+            &-row{
+                display: block;
+                .input1 + .input1{
+                    margin-left: 0;
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+    .commentpop{
+        .client-comment{
+            &__video{
+                left: 90px;
+            }
+            &__name{
+                position: static;
+                margin-bottom: 12px;
+            }
+            &__text{
+                max-height: 160px;
+            }
+        }
+    }
+    .steps{
+        &__item{
+            &-name{
+                font-size: 12px;
+                line-height: 16px;
+            }
+            &-text{
+                font-size: 9px;
+                line-height: 11px;
+            }
+        }
+    }
+    .faq{
+        &__item{
+            .accordion-btn{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    .client-comment{
+        &__text{
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__box{
+            padding: 16px;
+            padding-top: 81px;
+        }
+        &__quotes{
+            display: none;
+        }
+    }
+    .card1{
+        &__title{
+            font-size: 16px !important;
+            line-height: 22px !important;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+    .slider-box{
+        &._comments,
+        &._blog,
+        &._our-work,
+        &._showroom{
+            margin: 64px 0;
+        }
+        .card1{
+            width: 265px !important;
+        }
+        &._our-work,
+        &._blog{
+            .card1{
+                &__image{
+                    height: 200px; 
+                }
+            }
+        }
+        &._showroom{
+            .card1{
+                &__image{
+                    height: 340px;
+                }
+            }
+        }
+        &__slider{
+            margin-top: 16px;
+        }
+    }
+    .banners{
+        &__slider{
+            padding-bottom: 48px;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                padding: 16px;
+                .title{
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+            .slider-arrow{
+                left: 50%;
+                transform: translateX(-50%);
+                right: unset;
+                bottom: 0;
+            }
+        }
+        &__box{
+            margin-top: 64px;
+        }
+        &__item{
+            padding: 16px;
+            padding-bottom: 23px;
+        }
+    }
+}
+//1023
+@media(max-width:1270px) {
+    .header {
+        &__nav {
+            margin-left: 20px;
+
+            li+li {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .aboutus {
+        .block1 {
+            br {
+                display: none;
+            }
+        }
+
+
+    }
+
+    .block2 {
+        .aboutus__subtext {
+            margin-right: 0;
+
+            br {
+                display: none
+            }
+
+            ;
+        }
+    }
+
+    .aboutus__text {
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 600px;
+    }
+
+
+    .myremont__wrapper-var {
+        margin-right: 40px;
+    }
+
+    .myremont__wrapper-skip>button {
+        margin-right: 20px;
+    }
+
+    .block2 {
+        .block1__logo {
+            order: -1;
+        }
+    }
+
+    .block1__inner {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .block2__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .block1__logo {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .block1__box {
+        max-width: 100%;
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    .showroomin__box {}
+
+    .showroomin__video-title {
+        font-size: 28px;
+    }
+
+    .info {
+        &__inner {
+            flex-direction: column;
+
+            &-item {
+                margin-top: 25px;
+
+                min-width: 100%;
+            }
+        }
+    }
+
+    .materials__box {
+        flex-wrap: wrap;
+
+        ._longer,
+        ._short {
+            max-width: 100%;
+        }
+
+        ._short {
+            object-fit: contain;
+        }
+    }
+}
+
+@media(max-width:1170px) {
+    .myremont__bid {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            margin-right: 0;
+        }
+    }
+
+    .header {
+        &__nav {
+            li {
+                font-size: 13px;
+            }
+        }
+    }
+
+
+
+    .myremont__wrapper-var {
+        margin-right: 10px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .myremont__wrapper-skip>button {
+        margin-right: 10px;
+    }
+
+    // .how__steps-item:nth-of-type(2n) {
+    //     align-self: start;
+    //  .how__logo {
+    //     order: 2;
+    //     margin-right: 20px;
+    // }
+    // }
+
+    // .how__logo:nth-of-type(2n){
+    //     margin-left: 20px;
+    //     margin-right: 0;
+    // }
+    // .how__snake {
+    //     display: flex;
+    // }
+}
+
+@media(max-width:1116px) {
+
+    .aboutus__subtitle {
+        font-size: 24px !important;
+        line-height: 24px !important;
+    }
+
+    .aboutus__subtext {
+        font-size: 18px !important;
+        line-height: 27px !important;
+    }
+
+    .chek__price {
+        font-size: 24px;
+        margin-right: 20px;
+    }
+
+    .chek__back {
+        margin-right: 20px;
+    }
+
+    .breadcrumbs {
+        margin-top: 32px;
+
+    }
+
+    .showroomin__video-title {
+        margin-bottom: 28px;
+    }
+
+    .showroomin__video-title {
+        font-size: 20px;
+    }
+
+
+
+
+    .showroomin__video-subtitle {
+        font-size: 16px;
+    }
+
+    .bahandi {
+        display: none;
+    }
+
+    .header {
+        &__inner {
+            height: 107px;
+        }
+
+        &__logo {
+            margin-right: auto;
+
+            img {
+
+                width: 126px;
+                height: 43px;
+            }
+        }
+
+        &__nav {
+            display: none;
+        }
+    }
+
+    .footer {
+        &__inner {}
+
+        &__logo {
+            img {
+                width: 132px;
+                height: 45px;
+            }
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__socials {
+            margin-left: auto;
+            margin-right: 40px;
+        }
+    }
+}
+
+@media(max-width:1065px) {
+    .aboutus__text {
+        max-width: 500px;
+    }
+
+    .sliderOurwork {
+        &__slider-item {
+            display: flex;
+        }
+
+        &__slider-left {}
+
+        &__slider-arrow {
+            left: 0 !important;
+            display: inline;
+            position: relative;
+        }
+    }
+
+    .slider-second {
+        &__item {
+            img {
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .aboutus .card1 {
+        max-width: 400px;
+    }
+
+    .aboutus__block {
+        margin-bottom: 20px;
+        min-height: 100%;
+    }
+
+
+    .aboutus__text {
+        max-width: 100%;
+    }
+
+    .aboutus__person {
+        display: none;
+    }
+
+    .chek__scroll {
+        padding-left: 0;
+        margin-left: 15px;
+    }
+
+    .chek__top {
+        margin-top: 15px;
+    }
+
+
+
+
+    .myremont__wrapper-option {}
+
+    .myremont__wrapper-item {}
+
+    .myremont__bid {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            margin-right: 0;
+        }
+    }
+
+    .chek__card {
+        width: calc(50% - 32px);
+    }
+
+    .chek__card-select {
+        max-width: 420px !important;
+    }
+
+    .how__logo {
+        margin-right: 16px;
+    }
+
+    .how__snake-right {
+        max-width: 100%;
+    }
+
+    .how__subtitle {
+        max-width: 320px !important;
+        font-size: 14px;
+        margin-bottom: 10px;
+
+    }
+
+    .how__steps-item {
+        width: auto;
+    }
+
+    .how__steps-item:nth-of-type(2n) {
+        .how__logo {
+            order: 2;
+            margin-right: 0;
+            margin-left: 16px;
+        }
+
+        .how__title,
+        .how__subtitle {
+            text-align: right;
+
+        }
+    }
+
+    .how__title {
+        max-width: 320px;
+        line-height: 26px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .how__start {
+        flex-direction: column;
+
+        &-item {
+            max-width: 100% !important;
+            padding-right: 32px !important;
+        }
+
+        &-item:first-child {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .how__snake {
+        display: flex;
+        padding-right: 46.5px;
+        padding-left: 46.5px;
+        padding-right: 72.5px;
+        padding-left: 72.5px;
+    }
+
+    .how__start {
+        flex-direction: column;
+
+        &-item {
+            max-width: 100% !important;
+            padding-right: 32px !important;
+        }
+
+        &-item:first-child {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .card1-inner {
+        .card1 {
+            width: calc(50% - 32px);
+
+            &__image {
+                height: 250px;
+            }
+        }
+
+        .card1._big {
+            .card1__image {
+                height: 250px;
+            }
+        }
+    }
+
+    .myremont__wrapper {
+
+
+
+
+        .myremont__wrapper-option {
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        .myremont__wrapper-var {
+            margin-right: 50px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+}
+
+@media(max-width:927px) {
+
+
+    .draft {
+        br {
+            display: none;
+        }
+    }
+
+    .chek__price,
+    .chek__back {
+        margin-right: 10px;
+    }
+
+    .materials__item {
+        margin-right: 32px;
+    }
+
+    .materials__box {
+        ._bigger {
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width:779px) {
+    .showroomin {
+        .info {
+            margin-top: 35px;
+        }
+    }
+
+    .materials {
+        .info {
+            margin-top: 35px;
+        }
+    }
+
+    .sliderOurwork {
+        .info {
+            margin-top: 35px;
+        }
+
+        &__slider-item {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            justify-content: start;
+
+            img {
+                order: -1;
+            }
+        }
+
+        &__slider-left {
+            margin-top: 20px;
+            margin-right: 10px !important;
+            align-items: start;
+
+
+        }
+
+        &__slider-right {
+            margin-top: 20px;
+            margin-left: 0 !important;
+
+        }
+
+        &__slider-arrow {}
+    }
+
+    .chek__price {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .condition__text {
+        font-size: 18px;
+    }
+
+    .chek__btn {
+        margin-top: 20px;
+    }
+
+    .chek__filter {
+        margin-top: 20px;
+    }
+
+    .chek__top {
+        flex-wrap: wrap;
+    }
+
+
+
+    .showroomin__video-title {
+        white-space: nowrap;
+        line-height: 30px;
+    }
+
+
+
+    .showroomin__video-title {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    .showroomin__video-btn {
+        width: 70px;
+        height: 70px;
+
+        &::after {
+            top: 16px;
+            left: 26px
+        }
+    }
+
+    .showroomin__video-subtitle {
+        font-size: 15px;
+        margin-top: 10px;
+
+    }
+}
+
+@media(max-width:768px) {
+    .onbording__profile {
+        display: block;
+        text-align: center;
+    }
+
+    .myremont__addres-item {
+        flex-wrap: wrap;
+
+        span {
+            margin-top: 15px;
+        }
+    }
+
+    .draft {
+        &__buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__download {
+            max-width: 255px !important;
+        }
+
+        &__btn {
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+
+    .chek__card {
+        width: calc(100%);
+
+        .chek__image {
+            width: 100%;
+        }
+    }
+
+    .chek__card-title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .chek__card-select {
+        max-width: 740px !important;
+    }
+
+    ._textin {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+}
+
+@media(max-width:600px) {
+    .myremont__wrapper {}
+
+    .card1-inner {
+
+        .card1,
+        .card1._big {
+            width: calc(100% - 32px);
+        }
+    }
+}
+
+@media(max-width:537px) {
+    .steps-1 {
+        .steps__line {
+            display: none;
+        }
+
+        ._active {
+            display: block !important;
+        }
+
+        .line-1 {
+            display: block !important;
+        }
+
+        .step-2 {
+            display: block !important;
+        }
+
+        .steps__item {
+            display: none;
+        }
+    }
+
+    .steps-2 {
+        .steps__line {
+            display: none;
+        }
+
+        ._active {
+            display: block !important;
+        }
+
+        .line-2 {
+            display: block !important;
+        }
+
+        .step-3 {
+            display: block !important;
+        }
+
+        .steps__item {
+            display: none;
+        }
+    }
+
+    .steps-3 {
+        .steps__line {
+            display: none;
+        }
+
+        ._active {
+            display: block !important;
+        }
+
+        .line-3 {
+            display: block !important;
+        }
+
+        .step-4 {
+            display: block !important;
+        }
+
+        .steps__item {
+            display: none;
+        }
+    }
+
+    .steps-4 {
+        .steps__line {
+            display: none;
+        }
+
+        ._active {
+            display: block !important;
+        }
+
+        .line-3 {
+            display: block !important;
+        }
+
+        .step-3 {
+            display: block !important;
+        }
+
+        .steps__item {
+            display: none;
+        }
+    }
+
+    .onbording__subtitle {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .myremont__feedback {
+        margin-top: 25px;
+    }
+
+    .myremont__bid {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-title {
+            margin-bottom: 10px;
+        }
+
+        &-item {
+            margin-bottom: 25px;
+        }
+
+        .myremont__bid-subtitle {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+
+    .draft__text {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .condition__text {
+        font-size: 16px;
+    }
+
+    .showroomin__video-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .showroomin__video-subtitle {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .footer {
+
+
+        &__copyright {
+            margin-top: 24px;
+            flex-direction: column;
+            align-items: flex-start;
+
+            span {
+                margin-top: 8px;
+            }
+        }
+
+        &__socials {
+            margin: 0 auto;
+        }
+
+        &__logo {
+            img {
+                width: 113px;
+                height: 38px;
+            }
+        }
+
+        &__btn {
+            span {
+                display: none;
+            }
+
+            svg {
+                margin-right: 0;
+            }
+
+            width: 40px;
+            height: 40px;
+
+        }
+
+    }
+
+    .header__inner {
+
+        height: 88px;
+
+    }
+
+    .header__tel {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .bahandi {
+        margin-right: 0;
+    }
+
+
+}
+
+@media(max-width:425px) {
+    .draft__inner {}
+
+    .myremont__data {
+        margin-bottom: 25px;
+    }
+
+    .myremont__data-item span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .myremont__addres-item span:last-child {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .myremont__addres p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+
+    .draft__title {
+        font-size: 20px;
+        line-height: 18px;
+    }
+
+    .link__title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .link__close {
+        right: 0;
+    }
+
+    .draft__text {
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .chek__back,
+    .chek__title,
+    .chek__price {
+        margin-top: 10px;
+    }
+
+    .chek__top {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .materials__item {
+        margin-right: 20px;
+    }
+
+    ._textin {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    .card1-inner {
+
+        .card1,
+        .card1._big {
+            .card1__image {
+                height: 200px;
+            }
+        }
+    }
+
+    .showroomin__video-title {
+        line-height: 25px;
+    }
+
+    .showroomin__video-subtitle {
+        white-space: nowrap;
+    }
+
+    .showroomin__video-btn {
+        height: 55px;
+        width: 55px;
+    }
+
+    .condition__inner {
+        padding: 40px 69px 40px 20px;
+    }
+
+    .condition__inner::after {
+        top: 48px;
+        right: 2px;
+        width: 64px;
+        height: 44px;
+    }
+
+    .condition__text {
+        padding-left: 15px;
+    }
+
+    .showroomin__video-btn::after {
+        top: 10px;
+        left: 17px;
+        height: 33px;
+    }
+
+    .showroomin__video-title {
+        font-size: 14px;
+    }
+
+    .bahandi {
+        display: block;
+    }
+
+    .header__logo {
+        margin: 0 auto;
+
+        img {
+            width: 105px;
+            height: 36px;
+        }
+    }
+
+    .header__btn {
+        span {
+            display: none;
+        }
+
+        svg {
+            margin-right: 0;
+        }
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .header__logo {
+        margin: 0 auto;
+    }
+
+    .header__tel {
+        display: none;
+    }
+}
+
+@media(max-width:375px) {
+    .how__snake {
+        display: flex;
+        padding-right: 46.5px;
+        padding-left: 46.5px;
+    }
+}
