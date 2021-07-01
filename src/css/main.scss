@@ -2454,6 +2454,70 @@ footer {
             }
         }
     }
+    .packages-backdrop{
+        &__list{
+            margin-left: -16px;
+            margin-right: -16px;
+            li{
+                padding: 16px 24px;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                cursor: pointer;
+                svg{
+                    display: block;
+                    margin-right: 8px;
+                }
+                &._active{
+                    background: rgba(0, 132, 255, 0.08);
+                    svg path{
+                        fill: #1374CF;
+                    }
+                }
+            }
+        }
+        .popup2{
+            &__top{
+                padding: 16px;
+            }
+            &__inner{
+                padding-top: 0;
+            }
+            &__btn{
+                margin-top: 16px;
+            }
+        }
+    }
+    .packs-select{
+        display: none;
+        margin-top: 16px;
+        padding: 10px;
+        background-color: #F7F7F7;
+        border-radius: 4px;
+        align-items: center;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        color: #1374CF;
+        padding-right: 28px;
+        position: relative;
+        & > svg{
+            display: block;
+            margin-right: 10px;
+        }
+        &__arrow{
+            position: absolute;
+            right: 10px;
+            top: 12px;
+            svg{
+                display: block;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
 }
 
 @import "media";

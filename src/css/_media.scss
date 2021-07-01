@@ -457,6 +457,9 @@
         .total-mob{
             display: block;
         }
+        .packs-select{
+            display: flex;
+        }
     }
 }  
 
@@ -1184,6 +1187,17 @@
 }
 @media(max-width: 359px) {
     .constructor{
+        .total-mob{
+            &__price{
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 5px;
+                &-old{
+                    margin-top: 2px;
+                    margin-left: 0;
+                }
+            }
+        }
         .filling{
             &-item{
                 &__price{
