@@ -729,6 +729,9 @@
         padding: 0 16px;
     }
     .constructor{
+        .footer-constructor{
+            display: none;
+        }
         .constructor-item{
             &._living-room1{
                 .constructor-item__dot{
@@ -1177,6 +1180,10 @@
                 }
             }
         }
+    }
+}
+@media(max-width: 359px) {
+    .constructor{
         .filling{
             &-item{
                 &__price{
