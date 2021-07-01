@@ -59,6 +59,15 @@ document.addEventListener("DOMContentLoaded", function() {
       if (document.querySelector('.finishing-mob')) {
         document.querySelector('.finishing-mob__inner').appendChild(document.querySelector('.finishing__form'));
       }
+    } else{
+      if (document.querySelector('.finishing__box')) {
+        document.querySelector('.finishing__slider-btns').appendChild(document.querySelector('.finishing__furniture'));
+        document.querySelector('.finishing__slider-btns').appendChild(document.querySelector('.finishing__select._package'));
+        document.querySelector('.finishing__slider-btns').appendChild(document.querySelector('.finishing__select._room'));
+      }
+      if (document.querySelector('.finishing-mob')) {
+        document.querySelector('.aside-constructor__content').appendChild(document.querySelector('.finishing__form'));
+      }
     }
     if (window.innerWidth <= 1024) {
       servicesSlider = new Swiper('.services__slider', {

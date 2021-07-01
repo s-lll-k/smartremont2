@@ -450,6 +450,13 @@ footer {
                         opacity: 1;
                     }
                 }
+                & + .fake-check2__square{
+                    border-color: #1374CF;
+                    background-color: #1374CF;
+                    svg{
+                        opacity: 1;
+                    }
+                }
             }
         }
     
@@ -466,6 +473,24 @@ footer {
             border-radius: 4px;
             transition: color .3s,
                         border-color .3s;
+        }
+        &__square{
+            width: 18px;
+            height: 18px;
+            background-color: #FFFFFF;
+            border: 1px solid #AAAAAA;
+            border-radius: 4px;
+            position: relative;
+            transition: border-color .3s ease,
+                        background-color .3s ease;
+            svg{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity .3s ease;
+            }
         }
         &__circle{
             width: 18px;
@@ -1736,6 +1761,9 @@ footer {
             background-position: center;
             background-repeat: no-repeat;
         }
+        span{
+            font-weight: 700;
+        }
     }
 
     .packs{
@@ -2049,8 +2077,9 @@ footer {
                     transform: translateY(-50%);
                 }
                 &._door{
-                    left: 24px;
-                    bottom: 124px;
+                    right: 24px;
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
             }
         }
@@ -2090,6 +2119,9 @@ footer {
                 font-weight: bold;
                 font-size: 16px;
                 line-height: 22px;
+                & + .constructor-item__dot-icon{
+                    margin-left: 4px;
+                }
             }
             &-icon{
                 width: 24px;
@@ -2097,7 +2129,9 @@ footer {
                 position: relative;
                 border-radius: 50%;
                 border: 2px solid #FFFFFF;
-                margin-right: 4px;
+                & + .constructor-item__dot-name{
+                    margin-left: 4px;
+                }
                 svg{
                     position: absolute;
                     left: 50%;
@@ -2269,14 +2303,32 @@ footer {
             background-color: #FFFFFF;
             box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.12);
             border-radius: 4px;
+            &-box{
+                margin-top: 16px;
+                border-top: 1px solid #E8E8E8;
+                padding-top: 16px;
+            }
+            .inform{
+                margin-bottom: 0;
+                margin-top: 16px;
+            }
         }
         &__item{
+            max-width: 100% !important;
+            width: 100%;
             display: flex;
             & + .finishing__item{
                 margin-top: 16px;
             }
             .fake-check2__wrapper{
                 padding-top: 2px;
+            }
+            &-more{
+                margin-top: 4px;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                color: #1374CF;
             }
             &-content{
                 width: 100%;
@@ -2294,7 +2346,7 @@ footer {
             }
             &-price{
                 min-width: max-content;
-                margin-left: 8px;
+                margin-left: auto;
                 text-align: right;
                 &-new{
                     font-weight: bold;
