@@ -732,6 +732,12 @@
         padding: 0 16px;
     }
     .constructor{
+        .header._mobile-none{
+            display: none;
+        }
+        .header-back-to{
+            display: block;
+        }
         .footer-constructor{
             display: none;
         }
