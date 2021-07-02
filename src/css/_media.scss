@@ -1,5 +1,5 @@
 @media(max-width:1380px) {
-    .constructor{
+    .constructor-wrapper{
         .filling{
             &-item{
                 width: calc(33.33% - 12px);
@@ -17,7 +17,7 @@
             }
         }
     }
-    .constructor{
+    .constructor-wrapper{
         .packs{
             &__items{
                 max-width: 100%;
@@ -42,7 +42,7 @@
     }
 }
 @media(max-width: 1200px) {
-    .constructor{
+    .constructor-wrapper{
         &._constructor-page{
             .wrapper-with-aside{
                 flex-direction: column;
@@ -121,7 +121,7 @@
             }
         }
     }
-    .constructor{
+    .constructor-wrapper{
         .filling{
             &-item{
                 width: calc(50% - 12px);
@@ -173,7 +173,7 @@
         }
     }
 
-    .constructor{
+    .constructor-wrapper{
         .total{
             &__list{
                 display: none;
@@ -183,7 +183,7 @@
 }
 
 @media (max-width: 1024px){
-    .constructor{
+    .constructor-wrapper{
         .popup2{
             border-radius: 12px 12px 0 0;
             max-width: 100%;
@@ -464,7 +464,7 @@
 }  
 
 @media (max-width: 800px){  
-    .constructor{
+    .constructor-wrapper{
         .services{
             margin-bottom: 24px;
             &__title{
@@ -529,7 +529,7 @@
 }
 
 @media (max-width: 768px){
-    .constructor{
+    .constructor-wrapper{
         .constructor-item{
             &._living-room1{
                 .constructor-item__dot{
@@ -648,7 +648,7 @@
     .wrapper{
         padding-bottom: 122px;
     }
-    .constructor{
+    .constructor-wrapper{
         .onboarding{
             &__row{
                 flex-direction: column;
@@ -731,7 +731,10 @@
     .container{
         padding: 0 16px;
     }
-    .constructor{
+    .constructor-wrapper{
+        &._pt62{
+            padding-top: 62px;
+        }
         .header._mobile-none{
             display: none;
         }
@@ -1177,7 +1180,7 @@
     }
 }
 @media(max-width: 380px) {
-    .constructor{
+    .constructor-wrapper{
         .finishing{
             &__selects{
                 flex-direction: column;
@@ -1192,7 +1195,7 @@
     }
 }
 @media(max-width: 359px) {
-    .constructor{
+    .constructor-wrapper{
         .total-mob{
             &__price{
                 flex-direction: column;
