@@ -390,6 +390,7 @@ footer {
         position: relative;
         cursor: pointer;
         select{
+            background-image: none;
             background-color: transparent;
             cursor: pointer;
             display: block;
@@ -547,20 +548,25 @@ footer {
         font-size: 18px;
         line-height: 24px;
     }
-    
-
-
-
     .header-back-to{
+        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .mobile-popup{
         display: none;
+        overflow-y: auto;
         position: fixed;
-        z-index: 99;
-        width: 100%;
         left: 0;
         top: 0;
-        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.06);
-        .back{
-            display: block !important;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        z-index: 100;
+        .onboarding__item2{
+            margin-top: 0;
+            & + .onboarding__item2{
+                margin-top: 24px;
+            }
         }
     }
 
@@ -2031,6 +2037,7 @@ footer {
     }
 
     .switcher{
+        cursor: pointer;
         & > input{
             display: none;
             &:checked + .switcher__box{
@@ -2454,17 +2461,125 @@ footer {
                 }
             }
         }
+        &__materials{
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        &__material{
+            display: flex;
+            align-items: center;
+            & + .finishing-modal__material{
+                margin-top: 8px;
+            }
+            &-image{
+                margin-right: 8px;
+                img{
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    object-fit: cover;
+                }
+            }
+            &-type{
+                font-size: 10px;
+                line-height: 12px;
+                color: #595959;
+                margin-bottom: 2px;
+            }
+            &-name{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+        &__show-hide{
+            margin-top: 8px;
+            font-size: 12px;
+            line-height: 16px;
+            color: #1374CF;
+        }
+        &__category{
+            display: flex;
+            overflow-x: auto;
+            margin-right: 40px;
+            margin-bottom: 8px;
+            &-item{
+                min-width: max-content;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                color: #AAAAAA;
+                border: 1px solid #AAAAAA;
+                border-radius: 100px;
+                padding: 4px 8px;
+                & + .finishing-modal__category-item{
+                    margin-left: 16px;
+                }
+                &._active{
+                    font-weight: bold;
+                    color: #1374CF;
+                    border-color: #1374CF;
+                }
+            }
+        }
+        &__options{
+            margin-top: 8px;
+        }
+        &__option{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & + .finishing-modal__option{
+                margin-top: 8px;
+            }
+            &-image{
+                margin-right: 8px;
+                img{
+                    width: 32px;
+                    height: 32px;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+            &-name{
+                margin-right: auto;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+    .modals-content{
+        display: none;
+        padding: 8px 0 16px;
+        .finishing-modal{
+            &__subtitle{
+                font-size: 10px;
+                line-height: 14px;
+            }
+        }
+    }
+    .special-line{
+        height: 65px;
+        width: 1px;
+        background-color: #AAA;
+        opacity: .3;
+        margin: 0 11px;
     }
     .material{
         display: block;
         width: 72px;
         &__image{
-            width: 60px;
-            height: 60px;
             margin: 0 6px;
             border-radius: 4px;
             overflow: hidden;
             position: relative;
+            img{
+                display: block;
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+            }
         }
         &__info-icon{
             background-color: rgba(255, 255, 255, 0.75);

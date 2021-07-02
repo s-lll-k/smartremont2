@@ -618,6 +618,9 @@
                 }
             }
         }
+        .modals-content{
+            display: block;
+        }
         .pagination-pc{
             display: block;
         }
@@ -732,13 +735,7 @@
         padding: 0 16px;
     }
     .constructor-wrapper{
-        &._pt62{
-            padding-top: 62px;
-        }
-        .header._mobile-none{
-            display: none;
-        }
-        .header-back-to{
+        .mobile-popup{
             display: block;
         }
         .footer-constructor{
