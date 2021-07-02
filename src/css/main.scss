@@ -2553,9 +2553,36 @@ footer {
         display: none;
         padding: 8px 0 16px;
         .finishing-modal{
+            &__option{
+                &-name{
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+            &__title{
+                padding-right: 0;
+                font-size: 12px;
+                line-height: 16px;
+                margin-bottom: 8px;
+            }
+            &__materials{
+                margin-top: 8px;
+                margin-bottom: 0;
+            }
+            &__category{
+                margin-right: 0;
+            }
             &__subtitle{
                 font-size: 10px;
                 line-height: 14px;
+            }
+            &__scroll-box{
+                padding-bottom: 0;
+                border-bottom: none;
+                margin-bottom: 16px;
+            }
+            &__show-hide{
+                font-weight: bold;
             }
         }
     }

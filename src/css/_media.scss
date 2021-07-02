@@ -531,14 +531,6 @@
 @media (max-width: 768px){
     .constructor-wrapper{
         .constructor-item{
-            &._living-room1{
-                .constructor-item__dot{
-                    &._door{
-                        left: 24px;
-                        bottom: 24px;
-                    }
-                }
-            }
             &__dot{
                 &-name{
                     padding: 4px 12px;
@@ -754,7 +746,7 @@
                         left: 16px;
                     }
                     &._door{
-                        left: 16px;
+                        right: 16px;
                         bottom: 16px;
                     }
                 }
