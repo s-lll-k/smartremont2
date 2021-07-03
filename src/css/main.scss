@@ -2162,10 +2162,21 @@ footer {
             }
         }
         &__images{
-            img{
+            position: relative;
+            & > img._base{
                 display: block;
                 width: 100%;
             }
+        }
+    }
+    .constructor-image{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        &._active{
+            display: block;
         }
     }
 
