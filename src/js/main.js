@@ -29,6 +29,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
+  // АККардеон
+  let accordeon = document.querySelectorAll('.checkout-material__box');
+  for (let i = 0; i < accordeon.length; i++) {
+    accordeon[i].addEventListener('click', function() {
+      this.parentNode.classList.toggle('_active');
+    });
+  }
+  // АККардеон
+
   // SLIDER
   let servicesSlider;
   

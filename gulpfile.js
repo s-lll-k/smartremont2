@@ -104,7 +104,6 @@ export const buildImage = (done) => {
 		.pipe(plumber())
 		.pipe(gulp.dest('dist/images'))
 		.pipe(sync.stream());
-
 	done();
 };
 
@@ -154,7 +153,7 @@ export const watch = () => {
 	gulp.watch('src/css/*.scss', gulp.series(buildCss));
 	gulp.watch('src/js/**/*.js', gulp.series(buildJs));
 	gulp.watch('src/fonts/**/*', gulp.series(buildFont));
-	gulp.watch('src/images/**/*', gulp.series(buildImage));
+	gulp.watch('src/images/*', gulp.series(buildImage));
 };
 
 // Dev
