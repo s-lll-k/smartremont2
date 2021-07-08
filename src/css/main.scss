@@ -1117,6 +1117,11 @@ footer {
             overflow: hidden;
             position: relative;
             min-width: max-content;
+            cursor: pointer;
+            transition: box-shadow .3s ease;
+            &:hover{
+                box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.37);
+            }
             & + .aside-constructor__item{
                 margin-left: 8px;
             }
