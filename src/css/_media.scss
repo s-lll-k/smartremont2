@@ -1495,11 +1495,17 @@
                 &__price{
                     flex-direction: column;
                     align-items: flex-start;
-                    &-old{
-                        margin-left: 0;
-                    }
                 }
             }
+        }
+        .filter-constructor__bottom{
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        .filter-constructor__select._brand{
+            margin-left: 0;
+            margin-top: 8px;
         }
     }
 }

@@ -1313,12 +1313,15 @@ footer {
             &__price{
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
                 margin-bottom: 8px;
+                margin-left: -8px;
                 &-new{
                     font-weight: bold;
                     font-size: 18px;
                     line-height: 24px;
                     color: #1374CF;
+                    margin-left: 8px;
                 }
                 &-old{
                     font-weight: 600;
@@ -2006,6 +2009,7 @@ footer {
             }
             &-image{
                 width: 44px;
+                min-width: 44px;
                 img{
                     display: block;
                     width: 100%;
@@ -2036,6 +2040,7 @@ footer {
                     font-size: 10px;
                     line-height: 14px;
                     color: #595959;
+                    text-decoration: line-through;
                 }
             }
         }
@@ -2225,6 +2230,7 @@ footer {
             text-align: left;
             display: flex;
             align-items: center;
+            width: 190px;
             &._package{
                 left: 24px;
                 top: 24px;
