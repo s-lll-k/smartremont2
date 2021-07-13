@@ -124,4 +124,16 @@ document.addEventListener("DOMContentLoaded", function() {
     changeDOM();
   }, false);
   // SLIDER
+
+
+  // POPUP
+  let popups = document.querySelectorAll('.popup-call');
+  for (let i = 0; i < popups.length; i++) {
+    popups[i].addEventListener('click', function() {
+        let id = this.dataset.popup;
+        document.getElementById(id).classList.add('_active');
+        document.getElementById(id).parentNode.classList.add('_active');
+    });
+  }
+  // POPUP
 });
