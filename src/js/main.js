@@ -113,7 +113,45 @@ document.addEventListener("DOMContentLoaded", function() {
       if (document.querySelector('.pagination-pc')) {
         document.querySelector('.pagination-pc').appendChild(document.querySelector('.filter-constructor__pagination'));
       }
+      // POPUP
+      let popups = document.querySelectorAll('.popup-call');
+      for (let i = 0; i < popups.length; i++) {
+        popups[i].addEventListener('click', function() {
+          if (document.querySelector('.modals-content__inner .popup__content')) {
+            document.querySelector('.popup._active').appendChild(document.querySelector('.modals-content__inner .popup__content'));
+            document.querySelector('.popup._active').classList.remove('_active');
+            document.querySelector('.constructor-item__dot._active').classList.remove('_active');
+          }
+          this.classList.add('_active');
+          let id = this.dataset.popup;
+          document.getElementById(id).classList.add('_active');
+          document.querySelector('.modals-content__inner').appendChild(document.getElementById(id).querySelector('.popup__content'));
+        });
+      }
+      // POPUP
     } else {
+      // POPUP
+      let popups = document.querySelectorAll('.popup-call');
+      for (let i = 0; i < popups.length; i++) {
+        popups[i].addEventListener('click', function() {
+            let id = this.dataset.popup;
+            document.getElementById(id).classList.add('_active');
+            document.getElementById(id).parentNode.classList.add('_active');
+        });
+      }
+
+      let popupCloseBtns = document.querySelectorAll('.popup-close');
+      for (let i = 0; i < popupCloseBtns.length; i++) {
+        popupCloseBtns[i].addEventListener('click', function() {
+            document.querySelector('.popup._active').classList.remove('_active');
+            document.querySelector('.modals-section').classList.remove('_active');
+        });
+      }
+      document.querySelector('.modals-section__back').addEventListener('click', function() {
+        document.querySelector('.popup._active').classList.remove('_active');
+        document.querySelector('.modals-section').classList.remove('_active');
+      });
+      // POPUP
       if (document.querySelector('.filter-constructor__bottom')) {
         document.querySelector('.filter-constructor__bottom').appendChild(document.querySelector('.filter-constructor__pagination'));
       }
@@ -126,14 +164,4 @@ document.addEventListener("DOMContentLoaded", function() {
   // SLIDER
 
 
-  // POPUP
-  let popups = document.querySelectorAll('.popup-call');
-  for (let i = 0; i < popups.length; i++) {
-    popups[i].addEventListener('click', function() {
-        let id = this.dataset.popup;
-        document.getElementById(id).classList.add('_active');
-        document.getElementById(id).parentNode.classList.add('_active');
-    });
-  }
-  // POPUP
 });

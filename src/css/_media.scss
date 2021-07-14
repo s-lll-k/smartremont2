@@ -867,10 +867,8 @@
 }
 
 @media (max-width: 640px){
-    .wrapper{
-        padding-bottom: 122px;
-    }
     .constructor-wrapper{
+        padding-bottom: 122px;
         .checkout{
             &-services{
                 &__switchers{
