@@ -1567,6 +1567,7 @@ footer {
 
     .total{
         position: fixed;
+        z-index: 1;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -2084,6 +2085,66 @@ footer {
 
     .constructor-item{
         position: relative;
+        &._shower{
+            background-color: rgba(174, 167, 163, 0.25);
+        }
+        &._shower1{
+            .constructor-item__dot{
+                &._top{
+                    top: 24px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &._floor{
+                    bottom: 24px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &._options{
+                    left: 50%;
+                    top: 127px;
+                    transform: translateX(-50%);
+                }
+                &._shower{
+                    right: 24px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        &._shower2{
+            .constructor-item__dot{
+                &._floor{
+                    bottom: 24px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &._options{
+                    left: 50%;
+                    top: 127px;
+                    transform: translateX(-50%);
+                }
+                &._door{
+                    right: 24px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        &._shower3{
+            .constructor-item__dot{
+                &._floor{
+                    bottom: 24px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &._options{
+                    left: 50%;
+                    top: 127px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
         &._living-room1{
             .constructor-item__dot{
                 &._top{
@@ -2195,6 +2256,19 @@ footer {
                 display: block;
                 width: 100%;
             }
+            &._vertical{
+                max-width: max-content;
+                & > img._base{
+                    max-width: 100%;
+                    width: unset;
+                    max-height: 620px;
+                }
+            }
+        }
+        &__wrapper{
+            max-width: max-content;
+            margin: 0 auto;
+            position: relative;
         }
     }
     .constructor-image{
