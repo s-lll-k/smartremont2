@@ -2309,31 +2309,101 @@ footer {
         }
         &__select{
             position: absolute;
-            z-index: 1;
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(16px);
-            border-radius: 4px;
-            padding: 8px 16px;
-            padding-right: 48px;
-            text-align: left;
-            display: flex;
-            align-items: center;
+            z-index: 10;
             width: 190px;
+            &._active{
+                .finishing__select{
+                    &-dropdown{
+                        display: block;
+                    }
+                    &-btn{
+                        background: rgba(0, 132, 255, 0.08);
+                        .finishing__select{
+                            &-title,
+                            &-meter{
+                                color: #1374CF;
+                            }
+                            &-icon{
+                                svg path{
+                                    fill: #1374CF;
+                                }
+                            }
+                        }
+                    }
+                    &-arrow{
+                        svg{
+                            transform: rotateZ(180deg);
+                            path{
+                                fill: #1374CF;
+                            }
+                        }
+                    }
+                }
+            }
+            &-btn{
+                background: rgba(255, 255, 255, 0.75);
+                backdrop-filter: blur(16px);
+                border-radius: 4px;
+                padding: 8px 16px;
+                padding-right: 48px;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                height: 52px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                z-index: 2;
+            }
+            &-dropdown{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                display: none;
+                background: #FFFFFF;
+                backdrop-filter: blur(16px);
+                border-radius: 4px;
+                padding-top: 52px;
+                z-index: 1;
+                li{
+                    cursor: pointer;
+                    padding: 8px 16px;
+                    .finishing__select{
+                        &-wrapper{
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
             &._package{
                 left: 24px;
                 top: 24px;
+                z-index: 11;
             }
             &._room{
                 right: 24px;
                 top: 24px;
+                .finishing__select{
+                    &-dropdown{
+                        li{
+                            padding: 16px;
+                        }
+                    }
+                    &-wrapper{
+                        justify-content: flex-start;
+                    }
+                }
             }
             &-icon{
                 margin-right: 8px;
-                img{
+                svg{
                     display: block;
                 }
             }
             &-title{
+                max-width: 100px;
                 font-weight: bold;
                 font-size: 14px;
                 line-height: 20px;
@@ -2348,6 +2418,9 @@ footer {
                 top: 50%;
                 transform: translateY(-50%);
                 right: 16px;
+                svg{
+                    display: block;
+                }
             }
             &-meter{
                 font-size: 12px;
@@ -3384,24 +3457,15 @@ footer {
     }
 
     .modals-section{
-        position: fixed;
+        position: absolute;
         left: 0;
         top: 0;
         z-index: 1000;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: none;
         align-items: center;
         justify-content: center;
-        &__back{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.65);
-            z-index: 1;
-        }
         &._active{
             display: flex;
         }

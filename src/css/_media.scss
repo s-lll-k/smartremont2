@@ -92,8 +92,12 @@
                 padding: 16px 0;
             }
             &__select{
-                position: static;
-                background-color: #F7F7F7;
+                position: relative;
+                left: unset !important;
+                right: unset !important;
+                top: unset !important;
+                background-color: #F7F7F7;  
+                height: 52px;
                 & + .finishing__select{
                     margin-left: 20px;
                 }

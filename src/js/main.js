@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
       this.parentNode.classList.toggle('_active');
     });
   }
+  let accordeonFinishing = document.querySelectorAll('.finishing__select-btn');
+  for (let i = 0; i < accordeonFinishing.length; i++) {
+    accordeonFinishing[i].addEventListener('click', function() {
+      this.parentNode.classList.toggle('_active');
+    });
+  }
   // АККардеон
 
   // SLIDER
