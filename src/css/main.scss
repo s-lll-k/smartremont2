@@ -1782,6 +1782,9 @@ footer {
         }
         span{
             font-weight: 700;
+            &._blue{
+                color: #1374CF;
+            }
         }
     }
 
@@ -3155,6 +3158,12 @@ footer {
                     font-size: 12px;
                     line-height: 16px;
                     color: #1374CF;
+                }
+                &-text{
+                    font-size: 10px;
+                    line-height: 14px;
+                    color: #595959;
+                    margin-top: 4px;
                 }
                 &-box{
                     margin-right: 20px;

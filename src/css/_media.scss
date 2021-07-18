@@ -5,6 +5,17 @@
                 width: calc(33.33% - 12px);
             }
         }
+        .total{
+            &__price{
+                padding-right: 20px;
+                margin-right: 20px;
+            }
+            &__item{
+                & + .total__item{
+                    margin-left: 20px;
+                }
+            }
+        }
     }
 }
 @media(max-width:1270px) {
@@ -26,17 +37,6 @@
             &-item{
                 width: 100%;
                 margin-left: 0;
-            }
-        }
-        .total{
-            &__price{
-                padding-right: 20px;
-                margin-right: 20px;
-            }
-            &__item{
-                & + .total__item{
-                    margin-left: 20px;
-                }
             }
         }
     }
