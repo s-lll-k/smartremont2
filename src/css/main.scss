@@ -2284,7 +2284,102 @@ footer {
             display: block;
         }
     }
-
+    .mobile-popups{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 110;
+        &._active{
+            display: block;
+        }
+        &__back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+    .finishing-popup{
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 111;
+        &._active{
+            display: block;
+        }
+        &__list{
+            border-bottom: 1px solid #F7F7F7;
+            overflow-y: auto;
+            max-height: 304px;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            cursor: pointer;
+            padding: 16px;
+            padding-right: 56px;
+            position: relative;
+            height: 68px;
+            &._active{
+                background-color: rgba(0, 132, 255, 0.08);
+                .finishing-popup__item-icon{
+                    svg path{
+                        fill: #1374CF;
+                    }
+                }
+            }
+            &-wrapper{
+                display: flex;
+            }
+            &-icon{
+                margin-right: 8px;
+                svg{
+                    display: block;
+                }
+            }
+            &-title{
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &-meter{
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .packs__cost{
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                &-icon{
+                    line-height: 14px;
+                    svg{
+                        width: 6px;
+                        height: 14px;   
+                    }
+                }
+            }
+        }
+        .popup2{
+            &__top{
+                padding: 16px;
+            }
+            &__inner{
+                padding: 0;
+            }
+            &__btn{
+                width: calc(100% - 32px);
+                margin: 16px;
+            }
+        }
+    }
     .finishing{
         &-mob{
             display: none;
