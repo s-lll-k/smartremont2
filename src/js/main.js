@@ -130,6 +130,14 @@ document.addEventListener("DOMContentLoaded", function() {
           this.parentNode.classList.toggle('_active');
         });
       }
+      window.addEventListener('click', e => { // при клике в любом месте окна браузера
+        const target = e.target // находим элемент, на котором был клик
+        if (!target.closest('.finishing__select-dropdown') && !target.closest('.finishing__select-btn')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+          while (document.querySelector('.finishing__select._active') != null) {
+            document.querySelector('.finishing__select._active').classList.remove('_active')
+          }
+        }
+      })
     }
     if (window.innerWidth <= 768) {
       if (document.querySelector('.pagination-pc')) {
