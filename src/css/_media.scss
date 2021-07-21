@@ -885,6 +885,11 @@
                 }
             }
         }
+        .material{
+            &__image::after{
+                border-width: 1px;
+            }
+        }
     }
 }
 
